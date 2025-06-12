@@ -7,6 +7,10 @@ float op1,op2,res;
 cout<<"***WELCOME TO SIMPLE CALCULATOR***"<<endl;
 cout<<"enter 1 for addition"<<endl<<"enter 2 for subtraction"<<endl<<"enter 3 for multiplication"<<endl<<"enter 4 for division"<<endl;
 cin>>choice;
+if (choice<1 || choice>4){
+  cout<<"incorrect input";
+  return 0;
+}
 cout<<"enter first operand"<<endl;
 cin>>op1;
 cout<<"enter second operand"<<endl;
